@@ -1,0 +1,16 @@
+h1 {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.container-white{
+  background: #ffffff;
+  padding: 10px;
+  max-width: 95%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.btn-new-client{
+  margin-bottom: 10px;
+}

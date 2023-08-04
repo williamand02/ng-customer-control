@@ -1,0 +1,31 @@
+<table class="blueTable">
+  <thead>
+    <tr>
+      <th *ngFor="let column of columns">{{ column }}</th>
+      <th *ngIf="editFunction || deleteAction"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of displayedData">
+      <td *ngFor="let column of columns">{{ item[column] }}</td>
+      <td *ngIf="editFunction || deleteAction">
+        <button class="btn-edit" *ngIf="editFunction" (click)="editFunction(item)">
+          <i class="fa fa-edit"></i>
+        </button>
+        <button class="btn-delete" *ngIf="deleteAction" (click)="onDeleteClick(item)">
+          <i class="fa fa-trash"></i>
+        </button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+<div class="pagination">
+  <button [disabled]="currentPage === 1" (click)="onPageChange(currentPage - 1)">
+    <i class="fa fa-angle-left"></i>
+  </button>
+  <span>Page {{ currentPage }} of {{ totalPages() }}</span>
+  <button [disabled]="currentPage === totalPages()" (click)="onPageChange(currentPage + 1)">
+    <i class="fa fa-angle-right"></i>
+  </button>
+</div>

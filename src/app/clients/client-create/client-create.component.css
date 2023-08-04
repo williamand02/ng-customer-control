@@ -1,0 +1,59 @@
+h1 {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container-white {
+  background: #ffffff;
+  padding: 10px;
+  max-width: 95%;
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-white>div {
+  padding: 5px;
+}
+
+.btn-new-client {
+  margin-bottom: 10px;
+}
+
+
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  padding-top: 18px;
+}
+
+.btn-group {
+  width: 100%;
+  text-align: center;
+}
+
+.width-1 {
+  width: 100%;
+}
+
+.width-2 {
+  width: 50%;
+}
+
+.width-3 {
+  width: 75%;
+}
+
+.width-4 {
+  width: 25%;
+}

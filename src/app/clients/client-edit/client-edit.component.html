@@ -1,0 +1,36 @@
+<h1>Edit Client</h1>
+<div class="container-white">
+  <div class="input-group width-1">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="client.name">
+  </div>
+
+  <div class="input-group width-2">
+    <label for="value">Value:</label>
+    <input type="number" id="value" [(ngModel)]="client.value">
+  </div>
+
+  <div class="input-group width-2">
+    <label for="title">Title:</label>
+    <input type="text" id="title" [(ngModel)]="client.title">
+  </div>
+
+  <div class="input-group width-2">
+    <label for="date">Date:</label>
+    <input type="date" id="date" [(ngModel)]="client.date">
+  </div>
+
+  <div class="input-group width-4">
+    <label for="unidadeFederativa">Unidade Federativa:</label>
+    <input type="text" id="unidadeFederativa" [(ngModel)]="client.unidadeFederativa">
+  </div>
+
+  <div class="checkbox-group width-4">
+    <input type="checkbox" id="isPayed" [(ngModel)]="client.isPayed">
+    <label for="isPayed">Is Payed:</label>
+  </div>
+
+  <div class="btn-group">
+    <button class="btn-success" (click)="saveChanges()">Save Changes</button>
+  </div>
+</div>

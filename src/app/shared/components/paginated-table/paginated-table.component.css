@@ -1,0 +1,116 @@
+table.blueTable {
+  border: 1px solid #042BA4;
+  background-color: #F8F8F8;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table.blueTable td,
+table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+
+table.blueTable tbody td {
+  font-size: 13px;
+}
+
+table.blueTable tr:nth-child(even) {
+  background: #DEEBFF;
+}
+
+table.blueTable thead {
+  background: #8ABAFF;
+  border-bottom: 1px solid #161A3A;
+}
+
+table.blueTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 0px solid #3D48A4;
+}
+
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #8ABAFF;
+}
+
+table.blueTable tfoot td {
+  font-size: 13px;
+}
+
+table.blueTable tfoot .links {
+  text-align: right;
+}
+
+table.blueTable tfoot .links a {
+  display: inline-block;
+  background: #FFFFFF;
+  color: #042BA4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.btn-edit,
+.btn-delete {
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: transparent;
+  transition: all .3s;
+}
+
+.btn-edit:hover {
+  background-color: #FFFFFF;
+  border-color: #16a34a;
+}
+
+.btn-edit:hover i {
+  /* color: #FFFFFF; */
+}
+
+.btn-edit i {
+  font-size: 18px;
+  color: #16a34a;
+}
+
+.btn-delete:hover {
+  background-color: #FFFFFF;
+  border-color: #EF4444;
+}
+
+.btn-delete:hover i {}
+
+.btn-delete i {
+  color: #EF4444;
+  font-size: 18px;
+
+}
+
+.pagination {
+  background-color: #8ABAFF;
+}
+
+.pagination button {
+  background: #ffffff;
+  margin: 2px 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0px;
+
+}

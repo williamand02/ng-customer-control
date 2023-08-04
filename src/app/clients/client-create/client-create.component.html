@@ -1,0 +1,41 @@
+<h1>Create Client</h1>
+<div class="container-white">
+    <div class="input-group width-1">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="newClient.name">
+  </div>
+
+    <div class="input-group width-2">
+
+    <label for="value">Value:</label>
+    <input type="number" id="value" [(ngModel)]="newClient.value">
+  </div>
+
+    <div class="input-group width-2">
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" [(ngModel)]="newClient.title">
+  </div>
+
+    <div class="input-group width-2">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" [(ngModel)]="newClient.date">
+  </div>
+
+  <div class="input-group width-4">
+    <label for="unidadeFederativa">Unidade Federativa:</label>
+    <input type="text" id="unidadeFederativa" [(ngModel)]="newClient.unidadeFederativa">
+  </div>
+
+  <div class="checkbox-group width-4">
+    <label for="isPayed">Is Payed:</label>
+    <input type="checkbox" id="isPayed" [(ngModel)]="newClient.isPayed">
+  </div>
+
+  <div class="btn-group">
+    <button class="btn-success" (click)="saveClient()">Save Client</button>
+  </div>
+
+</div>

@@ -1,0 +1,13 @@
+<h1>Lista de Clientes</h1>
+<div class="container-white">
+  <div>
+    <button (click)="goToCreateClient()" class="btn-primary btn-new-client">New client</button>
+  </div>
+  <app-paginated-table
+  [data]="clients"
+  [columns]="tableColumns"
+  (onRowClicked)="onRowClicked($event)"
+  [editFunction]="editClient"
+  (deleteAction)="deleteClient($event)">
+  </app-paginated-table>
+</div>
